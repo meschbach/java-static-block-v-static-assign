@@ -1,0 +1,44 @@
+Compiled from "StaticOrdering.java"
+class StaticOrdering {
+  private static final java.math.BigDecimal zero;
+    descriptor: Ljava/math/BigDecimal;
+
+  private static final java.math.BigDecimal first;
+    descriptor: Ljava/math/BigDecimal;
+
+  private static final java.math.BigDecimal two;
+    descriptor: Ljava/math/BigDecimal;
+
+  StaticOrdering();
+    descriptor: ()V
+    Code:
+       0: aload_0       
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return        
+    LineNumberTable:
+      line 3: 0
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: iconst_1      
+       1: invokestatic  #2                  // Method java/lang/System.exit:(I)V
+       4: getstatic     #3                  // Field java/math/BigDecimal.ZERO:Ljava/math/BigDecimal;
+       7: putstatic     #4                  // Field zero:Ljava/math/BigDecimal;
+      10: new           #5                  // class java/math/BigDecimal
+      13: dup           
+      14: iconst_1      
+      15: invokespecial #6                  // Method java/math/BigDecimal."<init>":(I)V
+      18: putstatic     #7                  // Field first:Ljava/math/BigDecimal;
+      21: new           #5                  // class java/math/BigDecimal
+      24: dup           
+      25: iconst_2      
+      26: invokespecial #6                  // Method java/math/BigDecimal."<init>":(I)V
+      29: putstatic     #8                  // Field two:Ljava/math/BigDecimal;
+      32: return        
+    LineNumberTable:
+      line 5: 0
+      line 7: 4
+      line 10: 10
+      line 13: 21
+}
