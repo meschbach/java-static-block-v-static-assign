@@ -1,7 +1,7 @@
-== Background
+## Background
 I was recently in a discussion with a person knowledge about the inner workings of the JVM.  We had a difference of opinion in regards to the initialization phases of a class and the assignment of class variable value.  One person postulated all class variables would be initailized prior to the execution a static block.  The other person postulated the variables would be initialized in textual order of the source file, interspersed with the static blocks.
 
-= `<clinit>`
+# `<clinit>`
 One question resulting from the discussion was if the assignemnt occured with <clinit> or a different class initialziation phase.  This expiriment utilized the source files `StaticBlock.java` and `StaticConstruction.java` using the proceedure defined in `generate_diff.sh`.  The results are as follows:
 
 ```diff
