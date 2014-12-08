@@ -22,5 +22,7 @@ One question resulting from the discussion was if the assignemnt occured with <c
 >       line 4: 0
 ```
 
-As you can see, both result in the <clinit> static block being generated and are byte code equivelent with the exception of hte names and line numbers.
+As you can see, both result in the <clinit> static block being generated and are byte code equivelent with the exception of the names and line numbers.
 
+# Ordering of initialization
+Another postulate of the discussion was the possiblity of all assignment based initialization occurring prior to execution of the static blocks.  The results of the script `generate_static_ordering.sh` in the file `StaticOrdering.tclass` show all static blocks within a class are concatenated together. 
